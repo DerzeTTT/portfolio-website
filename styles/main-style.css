@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+
+    --default-font: 'Roboto', sans-serif;
+    --bg-color: rgb(21,21,21);
+
+}
+
+body {
+
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: var(--bg-color);
+    
+}
+
+#central {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+#title {
+
+    color: rgb(255,255,255);
+    font-family: var(--default-font);
+
+    margin-bottom: 75vh;
+    position: absolute;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-image: -webkit-linear-gradient(80deg, rgb(138, 148, 190), rgb(166, 187, 221));
+
+    text-shadow: 0 0 25px rgb(107, 141, 161);
+
+    font-size: 45px;
+
+}
+
+#btn-holder {
+
+    display: flex;
+    
+    gap: 80px;
+
+    margin-bottom: 45vh;
+
+}
+
+#btn-holder button {
+
+    background: none;
+
+    font-family: var(--default-font);
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 19px;
+
+    outline: none;
+
+    border-radius: 13px;
+    border: solid white 1px;
+
+    box-shadow: 0 0 2px white;
+
+    color: rgb(255,255,255);
+
+    width: 220px;
+    height: 90px;
+
+    background-color: rgba(0,0,0,.2);
+    backdrop-filter: blur(35px);
+
+    transition: background-color .1s, backdrop-filter .3s, box-shadow .2s;
+
+    padding-top: 38px;
+
+    text-shadow: 0 0 15px rgba(255,255,255,.8);
+
+}
+
+#btn-holder button:hover{
+
+    backdrop-filter: blur(0);
+    background-color: rbga(0,0,0,.7);
+
+    box-shadow: 0 0 11px white;
+
+}
+
+.btn-icon {
+
+    width: 35px;
+    height: 35px;
+
+    margin-bottom: 61px;
+    position: absolute;
+    
+    filter: invert(1) drop-shadow(0 0 8px white);
+
+}
+
+#bg-image {
+
+    z-index: -100;
+
+    position: absolute;
+
+    width: 100vw;
+    height: 102vh;
+
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)), url(../images/backgrounds/back1.jpg);
+
+    margin-bottom: 2vh;
+
+    filter: blur(4px) brightness(55%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#credits {
+
+    position: absolute;
+
+    color: white;
+
+    left: 0;
+    bottom: 0;
+
+    margin: 15px;
+
+    font-family: var(--default-font);
+
+    text-shadow: 0 0 12px white;
+
+}
+
+#btn-desc {
+
+    position: absolute;
+
+    color: white;
+    opacity: 0;
+
+    text-align: center;
+
+    width: 180px;
+    height: 210px;
+
+    text-shadow: 2px 2px 3px black;
+
+    filter: blur(15px);
+
+    transition: opacity .7s, top .2s, filter .3s;
+
+    font-family: var(--default-font);
+
+}
+
+.less-glow img {
+
+    filter: invert(1) drop-shadow(0 0 13px white);
+
+}
+
+.smaller-icon img {
+
+    width: 32px;
+    height: 32px;
+
+}
+
+.twitter-timeline {
+
+    position: absolute;
+    
+    left: 0;
+    top: 9%;
+
+    margin-left: 1%;
+
+}
